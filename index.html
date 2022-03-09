@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous Confessions</title>
+  <style>
+    body{
+      background-color: #1f2937;
+      color: #fca5a5;
+    }
+    input{
+      border-radius: 5px;
+    }
+    /* input:focus{
+
+    } */
+  </style>
+</head>
+<body>
+  <h1>Confess your love without revealing yourself !!</h1>
+  <!-- <p>Enter your unique university username and user crush's university username
+    similar to this ex: zx20345 zd20312. 
+    Make sure to send the hash value obtained on such a place where they can see it ex: briscrush
+    And in the message ask them to 
+  </p> -->
+  <br>
+  <form>
+    <label for="username">Enter your uni username space your crush's username</label>
+    <br><br>
+    <input type="text" name="username" id="username" placeholder="ex: zx20345 zd20312">
+    <input type="button" value="Submit" onclick="calcHash()" />
+  </form>
+  <br><br>
+
+  <h4>The hashvalue is:</h4>
+  <div id="hash-value">
+  </div>
+
+  <p>
+    This hashvalue is unique to the text you entered. That is if your crush enters enters your university username
+    <br> 
+    and then their own, only then would they get the same hashvalue. So this works if they have a
+    <br>
+    slight hint that you like them
+    and then they see this :P  
+    <br>
+    Go for it !!
+  </p>
+  <script src="./index.js"></script>
+</body>
+</html>
